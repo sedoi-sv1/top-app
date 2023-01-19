@@ -1,12 +1,12 @@
-import { Htag, Tag } from '../../components';
+import { /*Htag,*/ Tag } from '../../components';
 import { TopPageComponentProps } from './TopPageComponent.props';
 import styles from './TopPageComponent.module.css';
-import { TopLevelCategory } from '../../interfaces/page.interfase';
+//import { TopLevelCategory } from '../../interfaces/page.interface';
 /*import { SortEnum } from '../../components/Sor/Sor.props';*/
-import { useEffect, useReducer } from 'react';
-import { sortReducer } from './sort.reducer';
+//import { useEffect, useReducer } from 'react';
+//import { sortReducer } from './sort.reducer';
 
-export const TopPageComponent = ({ page, products, firstCategory }: TopPageComponentProps): JSX.Element => {
+export const TopPageComponent = ({ /*page,*/ products/*, firstCategory */}: TopPageComponentProps): JSX.Element => {
 
 
 
@@ -17,7 +17,7 @@ export const TopPageComponent = ({ page, products, firstCategory }: TopPageCompo
 		<div className={styles.wrapper}>
 			<div className={styles.title}>
 				{/*<Htag tag='h1'>{page.title}</Htag>*/}
-				{products && <Tag color='grey' size='m'>{products.length}</Tag>}
+				{products && <Tag color='gray' size='m'>{products.length}</Tag>}
 				<span>Сортировка</span>
 
 			</div>
